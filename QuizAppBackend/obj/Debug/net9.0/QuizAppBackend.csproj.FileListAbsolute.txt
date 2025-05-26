@@ -155,3 +155,4 @@ C:\PrivatprojekteGit\WeddingQuiz\QuizAppBackend\obj\Debug\net9.0\refint\QuizAppB
 C:\PrivatprojekteGit\WeddingQuiz\QuizAppBackend\obj\Debug\net9.0\QuizAppBackend.pdb
 C:\PrivatprojekteGit\WeddingQuiz\QuizAppBackend\obj\Debug\net9.0\QuizAppBackend.genruntimeconfig.cache
 C:\PrivatprojekteGit\WeddingQuiz\QuizAppBackend\obj\Debug\net9.0\ref\QuizAppBackend.dll
+C:\PrivatprojekteGit\WeddingQuiz\QuizAppBackend\obj\Debug\net9.0\QuizAppBackend.sourcelink.json
