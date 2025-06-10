@@ -7,9 +7,18 @@ services:
     ports:
       - "5000:8080"
     volumes:
-      - ./data/quiz.db:/app/data/quiz.db
+      - ./QuizAppBackend/Data/quiz.db:/app/data/quiz.db
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
     restart: unless-stopped
-volumes:
-  sqlite_data:
+
+  frontend:
+    build:
+      context: ./QuizAppFrontend
+      dockerfile: Dockerfile
+    container_name: QuizAppFrontend
+    ports:
+      - "80:80"
+
+    restart: unless-stopped

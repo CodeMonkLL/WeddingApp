@@ -1,5 +1,4 @@
-# Ignoriere lokal generierte SQLite-Datenbank
-*.db
-Data/
-bin/
-obj/
+*.db         # Ignoriert alle SQLite-Datenbanken
+Data/quiz.db        # ignoriert die spezifische SQLite-Datenbank
+/bin/        # Ignoriert Build-Ordner (Standard für .NET)
+/obj/        # Ignoriert ebenfalls Build-Ordner

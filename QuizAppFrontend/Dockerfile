@@ -8,6 +8,10 @@ RUN npm run build --prod
 
 # Stage 2: Runtime
 FROM nginx:alpine
-COPY --from=build /app/dist/quiz-app /usr/share/nginx/html
+COPY --from=build /app/dist/quiz-app-frontend/browser /usr/share/nginx/html
+
+# Deine eigene nginx.conf kopieren und als default config verwenden
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
