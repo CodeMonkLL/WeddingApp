@@ -1,0 +1,5 @@
+# Ignoriere lokal generierte SQLite-Datenbank
+*.db
+Data/
+bin/
+obj/

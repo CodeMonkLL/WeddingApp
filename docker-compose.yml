@@ -1,0 +1,15 @@
+services:
+  backend:
+    build:
+      context: ./QuizAppBackend
+      dockerfile: Dockerfile
+    container_name: QuizAppBackend
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./data/quiz.db:/app/data/quiz.db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    restart: unless-stopped
+volumes:
+  sqlite_data:
