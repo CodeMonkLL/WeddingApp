@@ -10,8 +10,8 @@ namespace Quizappbackend.Controllers
     [Route("api/[controller]")]
     public class QuestionsController : ControllerBase
     {
-        private readonly QuizDbContext _context;
-        public QuestionsController(QuizDbContext context)
+        private readonly WeddingDbContext _context;
+        public QuestionsController(WeddingDbContext context)
         {
             _context = context;
         }
@@ -41,7 +41,7 @@ namespace Quizappbackend.Controllers
             _context.Questions.Add(question);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Created();
         }
 
         [HttpDelete("{id}")]

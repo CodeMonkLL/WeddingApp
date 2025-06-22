@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace QuizAppBackend.Migrations
 {
     /// <inheritdoc />
-    public partial class ADDEDQuestions : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -27,6 +28,21 @@ namespace QuizAppBackend.Migrations
                 {
                     table.PrimaryKey("PK_Questions", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "UserResults",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Username = table.Column<string>(type: "TEXT", nullable: false),
+                    Score = table.Column<int>(type: "INTEGER", nullable: false),
+                    Timestamp = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserResults", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -34,6 +50,9 @@ namespace QuizAppBackend.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Questions");
+
+            migrationBuilder.DropTable(
+                name: "UserResults");
         }
     }
 }

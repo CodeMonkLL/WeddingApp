@@ -10,9 +10,9 @@ using Quizappbackend.Data;
 
 namespace QuizAppBackend.Migrations
 {
-    [DbContext(typeof(QuizDbContext))]
-    [Migration("20250522154837_ADDEDQuestions")]
-    partial class ADDEDQuestions
+    [DbContext(typeof(WeddingDbContext))]
+    [Migration("20250621133410_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

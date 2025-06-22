@@ -9,9 +9,9 @@ namespace Quizappbackend.Controllers;
 [Route("api/[controller]")]
 public class Usercontroller : ControllerBase
 {
-    private readonly QuizDbContext _context;
+    private readonly WeddingDbContext _context;
 
-    public Usercontroller(QuizDbContext context)
+    public Usercontroller(WeddingDbContext context)
     {
         _context = context;
     }

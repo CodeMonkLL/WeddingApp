@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QacnEUNQr8w=",
+  "dgSpecHash": "kub75fpuGus=",
   "success": true,
-  "projectFilePath": "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppBackend\\QuizAppBackend.csproj",
+  "projectFilePath": "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\QuizAppBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lukas.Luemers\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lukas.Luemers\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
