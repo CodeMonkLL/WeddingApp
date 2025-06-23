@@ -1,0 +1,38 @@
+<button mat-button (click)="sidenav.toggle()">
+  <mat-icon fontIcon="menu"></mat-icon>Menü
+</button>
+
+<mat-sidenav-container class="example-container" autosize>
+  <mat-sidenav #sidenav mode="over" position="start">
+    <a mat-button routerLink="/home" (click)="sidenav.close()">
+      <mat-icon fontIcon="home"></mat-icon>
+      Home
+    </a>
+    <br />
+    <a mat-button routerLink="/quiz" (click)="sidenav.close()">
+      <mat-icon fontIcon="quiz"></mat-icon>
+      Quiz
+    </a>
+    <br />
+    <a mat-button routerLink="/highscore" (click)="sidenav.close()">
+      <mat-icon fontIcon="leaderboard"></mat-icon>
+      Bestenliste
+    </a>
+    <br />
+    <a mat-button routerLink="/gaestebuch" (click)="sidenav.close()">
+      <mat-icon fontIcon="menu_book"></mat-icon>
+      Gästebuch
+    </a>
+    <br />
+    <a mat-button routerLink="/fotos" (click)="sidenav.close()">
+      <mat-icon fontIcon="camera_alt"></mat-icon>
+      Fotos
+    </a>
+    <br />
+    <a mat-button routerLink="/projekt" (click)="sidenav.close()">
+      <mat-icon fontIcon="info"></mat-icon>
+      Über das Projekt
+    </a>
+  </mat-sidenav>
+  <mat-sidenav-content> </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,14 @@
+.example-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+}
+
+.full-width-button {
+  width: 100%;
+  height: max-content;
+  justify-content: flex-start;
+  color: black !important;
+}
