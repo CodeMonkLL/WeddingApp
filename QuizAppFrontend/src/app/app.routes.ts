@@ -1,4 +1,13 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './Views/home/home.component';
+import { GuestbookComponent } from './Components/guestbook/guestbook.component';
 
-export const routes: Routes = [{ path: 'home', component: HomeComponent }];
+export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full', // Automatische Umleitung von "/" zu "/home"
+  },
+  { path: 'home', component: HomeComponent },
+  { path: 'gaestebuch', component: GuestbookComponent },
+];

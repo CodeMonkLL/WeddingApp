@@ -1,0 +1,130 @@
+@media (max-width: 600px) {
+  .guestbook-container {
+    border-radius: 16px;
+    padding: 24px;
+    margin: 8px 0;
+    background-color: #fafafa;
+    height: 50vh;
+    width: 90vw;
+  }
+
+  .guestbook-headline-container {
+    height: 5vh;
+    width: 90vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .guestbook-title {
+    text-align: center;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  .new-entry-container {
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin: 0px 0;
+    background-color: #fafafa;
+    height: 30vh;
+    width: 90vw;
+  }
+
+  .entry-card {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    padding: 8px;
+    word-wrap: break-word; // bricht lange Wörter
+    overflow-wrap: break-word; // unterstützt modernen Browser
+    white-space: normal; // verhindert Überlauf bei langen Texten
+  }
+
+  .no-entries {
+    font-style: italic;
+    color: #888;
+    margin: 12px 0;
+  }
+
+  .entry-list-scrollable {
+    max-height: 100 vh; // z. B. Platz für ca. 4 Cards
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+
+  .error-message {
+    color: red;
+    margin: 4px 0 12px 0;
+    font-size: 0.85rem;
+  }
+
+  .no-entries {
+    font-style: italic;
+    color: #888;
+    margin: 12px 0;
+  }
+}
+
+@media (min-width: 601px) {
+  .guestbook-container {
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px 0;
+    background-color: #fafafa;
+    height: 60vh;
+    width: 90vw;
+  }
+
+  .guestbook-title {
+    text-align: center;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  .new-entry-container {
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px 0;
+    background-color: #fafafa;
+    height: 30vh;
+    width: 90vw;
+  }
+
+  .entry-card {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    padding: 16px;
+    word-wrap: break-word; // bricht lange Wörter
+    overflow-wrap: break-word; // unterstützt modernen Browser
+    white-space: normal; // verhindert Überlauf bei langen Texten
+  }
+
+  .no-entries {
+    font-style: italic;
+    color: #888;
+    margin: 12px 0;
+  }
+
+  .entry-list-scrollable {
+    max-height: 100 vh; // z. B. Platz für ca. 4 Cards
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+
+  .error-message {
+    color: red;
+    margin: 4px 0 12px 0;
+    font-size: 0.85rem;
+  }
+
+  .no-entries {
+    font-style: italic;
+    color: #888;
+    margin: 12px 0;
+  }
+}

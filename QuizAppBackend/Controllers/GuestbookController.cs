@@ -37,6 +37,19 @@ public class GuestbookController : ControllerBase
         return Ok(guestbookentry);
     }
 
+    [HttpGet("Name")]
+    public async Task<ActionResult<GuestbookEntry>> GetGuestbookentryById(string Name)
+    {
+        var guestbookentry = await _context.GuestbookEntries.FindAsync(Name);
+
+        if (guestbookentry == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(guestbookentry);
+    }
+
     [HttpPost]
     public async Task<ActionResult<GuestbookEntry>> PostGuestbookEntry(GuestbookEntry guestbookEntry)
     {

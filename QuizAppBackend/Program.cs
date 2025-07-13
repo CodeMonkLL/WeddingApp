@@ -7,6 +7,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<WeddingDbContext>(options =>
     options.UseSqlite("Data Source=Data/Wedding.db"));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200",
+        "http://192.168.178.31:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowAnyOrigin();
+    });
+});
+
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -22,7 +35,9 @@ using (var scope = app.Services.CreateScope())
 
 
 // app.UseHttpsRedirection();
+app.UseCors("AllowAngularApp");
 app.UseAuthorization();
 app.MapControllers();
+
 
 app.Run();

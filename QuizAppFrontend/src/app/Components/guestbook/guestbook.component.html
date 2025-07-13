@@ -1,0 +1,44 @@
+<mat-card class="guestbook-headline-container">
+  <h3 class="guestbook-title">Gästebuch</h3>
+</mat-card>
+
+<mat-card class="guestbook-container">
+  <div class="entry-list-scrollable">
+    <mat-card *ngFor="let entry of guestBookEntries" class="entry-card">
+      <mat-card-content>
+        <p>{{ entry.message }}</p>
+      </mat-card-content>
+      <mat-card-header>
+        <mat-card-title>{{ entry.name }}</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </div>
+
+  <div *ngIf="guestBookEntries.length === 0" class="no-entries">
+    Noch keine Einträge vorhanden.
+  </div>
+</mat-card>
+
+<mat-card class="new-entry-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="newEntry.name" placeholder="Dein Name" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Nachricht</mat-label>
+    <textarea
+      matInput
+      [(ngModel)]="newEntry.message"
+      placeholder="Deine Nachricht"
+    ></textarea>
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" (click)="postEntry()">
+    Absenden
+  </button>
+
+  <div *ngIf="nameError" class="error-message">{{ nameError }}</div>
+  <div *ngIf="messageError" class="error-message">{{ messageError }}</div>
+</mat-card>
+<!-- <button mat-button (click)="deleteEntries()">Einträge löschen</button> -->

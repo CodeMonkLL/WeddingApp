@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\QuizAppBackend.csproj": {}
+    "C:\\PrivatprojekteGit\\WeddingQuiz\\quizappbackend\\QuizAppBackend.csproj": {}
   },
   "projects": {
-    "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\QuizAppBackend.csproj": {
+    "C:\\PrivatprojekteGit\\WeddingQuiz\\quizappbackend\\QuizAppBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\QuizAppBackend.csproj",
+        "projectUniqueName": "C:\\PrivatprojekteGit\\WeddingQuiz\\quizappbackend\\QuizAppBackend.csproj",
         "projectName": "QuizAppBackend",
-        "projectPath": "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\QuizAppBackend.csproj",
+        "projectPath": "C:\\PrivatprojekteGit\\WeddingQuiz\\quizappbackend\\QuizAppBackend.csproj",
         "packagesPath": "C:\\Users\\Lukas.Luemers\\.nuget\\packages\\",
-        "outputPath": "C:\\PrivatprojekteGit\\WeddingQuiz\\QuizAppbackend\\obj\\",
+        "outputPath": "C:\\PrivatprojekteGit\\WeddingQuiz\\quizappbackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

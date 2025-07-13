@@ -1,4 +1,69 @@
-<main>
-  <router-outlet></router-outlet>
-  <app-navbar></app-navbar>
-</main>
+<div class="overhead-div">
+  <button mat-button class="menu-button" (click)="opened = !opened">
+    <mat-icon>menu</mat-icon> Menü
+  </button>
+</div>
+
+<mat-sidenav-container class="sidebar-container" autosize>
+  <mat-sidenav [(opened)]="opened" mode="side" class="sidebar">
+    <a
+      mat-list-item
+      routerLink="/home"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      (click)="opened = false"
+    >
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a
+      mat-list-item
+      routerLink="/quiz"
+      routerLinkActive="active-link"
+      (click)="opened = false"
+    >
+      <mat-icon>quiz</mat-icon>
+      <span>Quiz</span>
+    </a>
+    <a
+      mat-list-item
+      routerLink="/highscore"
+      routerLinkActive="active-link"
+      (click)="opened = false"
+    >
+      <mat-icon>leaderboard</mat-icon>
+      <span>Bestenliste</span>
+    </a>
+    <a
+      mat-list-item
+      routerLink="/gaestebuch"
+      routerLinkActive="active-link"
+      (click)="opened = false"
+    >
+      <mat-icon>menu_book</mat-icon>
+      <span>Gästebuch</span>
+    </a>
+    <a
+      mat-list-item
+      routerLink="/fotos"
+      routerLinkActive="active-link"
+      (click)="opened = false"
+    >
+      <mat-icon>camera_alt</mat-icon>
+      <span>Fotos</span>
+    </a>
+    <a
+      mat-list-item
+      routerLink="/projekt"
+      routerLinkActive="active-link"
+      (click)="opened = false"
+    >
+      <mat-icon>info</mat-icon>
+      <span>Über das Projekt</span>
+    </a>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

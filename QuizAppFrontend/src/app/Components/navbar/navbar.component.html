@@ -2,8 +2,13 @@
   <mat-icon fontIcon="menu"></mat-icon>Menü
 </button>
 
-<mat-sidenav-container class="example-container" autosize>
-  <mat-sidenav #sidenav mode="over" position="start">
+<mat-sidenav-container class="sidebar-container" autosize>
+  <mat-sidenav
+    class="mat-sidebar-content"
+    #sidenav
+    mode="over"
+    position="start"
+  >
     <a mat-button routerLink="/home" (click)="sidenav.close()">
       <mat-icon fontIcon="home"></mat-icon>
       Home
@@ -34,5 +39,5 @@
       Über das Projekt
     </a>
   </mat-sidenav>
-  <mat-sidenav-content> </mat-sidenav-content>
+  <mat-sidenav-content class="mat-sidebar-content"> </mat-sidenav-content>
 </mat-sidenav-container>

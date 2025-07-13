@@ -1,9 +1,10 @@
-.example-container {
-  width: 100%;
-  height: 100vh;
+.sidebar-container {
+  width: 40%;
+  height: 30vh;
   position: relative;
   display: flex;
   border-radius: 20px;
+  overflow-y: scroll;
 }
 
 .full-width-button {
@@ -11,4 +12,8 @@
   height: max-content;
   justify-content: flex-start;
   color: black !important;
+}
+
+.mat-sidebar-content {
+  background-color: white;
 }
