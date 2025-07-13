@@ -11,6 +11,17 @@ a {
   width: 100%;
 }
 
+mat-sidenav a {
+  display: flex; /* Flexbox, damit Icon und Text nebeneinander */
+  align-items: center; /* Vertikal zentriert */
+  width: 100%; /* Volle Breite */
+  padding: 8px 16px; /* Innenabstand */
+  box-sizing: border-box; /* Padding zählt zur Breite */
+  text-decoration: none; /* Link-Text ohne Unterstreichung */
+  color: inherit; /* Farbe von Eltern übernehmen */
+  margin-bottom: 8px; /* Abstand nach unten */
+}
+
 .menu-button {
   font-size: 18px;
   padding: 12px 16px;
