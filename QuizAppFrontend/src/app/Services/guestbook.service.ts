@@ -7,8 +7,8 @@ import { GuestbookEntry } from '../Models/GuestbookEntry';
   providedIn: 'root',
 })
 export class GuestbookService {
-  // private apiUrl = 'http://localhost:8080/api/guestbook';
-  private apiUrl = 'http://192.168.178.31:8080/api/guestbook';
+  private apiUrl = 'http://localhost:8080/api/guestbook';
+  // private apiUrl = 'http://192.168.178.31:8080/api/guestbook';
 
   constructor(private http: HttpClient) {}
 

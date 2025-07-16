@@ -1,4 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.overhead-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.sidebar-container {
+  margin-top: 48px;
+  height: calc(100vh - 48px);
+  overflow: hidden;
+}

@@ -5,7 +5,7 @@
 </div>
 
 <mat-sidenav-container class="sidebar-container" autosize>
-  <mat-sidenav [(opened)]="opened" mode="side" class="sidebar">
+  <mat-sidenav [(opened)]="opened" mode="over" class="sidebar">
     <a
       mat-list-item
       routerLink="/home"
@@ -54,7 +54,7 @@
     </a>
     <a
       mat-list-item
-      routerLink="/projekt"
+      routerLink="/about"
       routerLinkActive="active-link"
       (click)="opened = false"
     >

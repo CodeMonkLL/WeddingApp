@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* verhindert horizontales Scrollen */
+  box-sizing: border-box;
+}
+
+.scroll-wrapper {
+  height: 90vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center; /* Zentriert horizontal */
+  padding: 16px 0; /* Abstand oben und unten */
+  border: solid 4px;
+  border-radius: 16px;
+}
+
+.borderclass {
+  border: solid 4px;
+}
+
+.about-title {
+  background-color: white;
+  color: black;
+  padding: 8px 24px; /* Innenabstand, damit der weiße Hintergrund um den Text ist */
+  border-radius: 12px;
+  margin: 0; /* Entfernt Standard-Margin */
+  max-width: fit-content; /* Passt die Breite an den Text an */
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Allura";
+}
+
+mat-accordion {
+  border: solid 4px;
+  border-radius: 16px;
+}
+
+.overhead-div {
+  display: flex;
+  height: 90vh; /* z.B. 90% der Viewport-Höhe */
+  flex-direction: column;
+  max-height: 100%;
+  width: 100%;
+  background: #c27e89;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  border: solid 4px;
+  border-radius: 16px;
+}
+about-title {
+  background-color: white;
+}
+mat-panel-title {
+  font-style: italic;
+  text-decoration: underline;
+
+  border-radius: 16px;
+}
+
+.details-div {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.details-p {
+  font-family: "Allura";
+  background-color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  overflow-y: auto;
+  flex-grow: 1;
+  border: 2px solid;
+}
+details2-p .details-p {
+  font-family: Roboto "Helvetica Neue", sans-serif;
+}
